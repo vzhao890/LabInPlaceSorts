@@ -6,10 +6,11 @@ public class InPlaceSorts
         int N = list1.length;
         int i;
         int j;
-        int temp; 
+        int temp;
         for (i = 1; i< N; i++)
         {
-            j = i; temp = list1[i];
+            j = i; 
+            temp = list1[i];
             while (j > 0 && temp < list1[j-1])
             {
                 list1[j] = list1[j-1];
