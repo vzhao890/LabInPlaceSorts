@@ -39,18 +39,19 @@ public class InPlaceSorts
     }
     public static void bubbleSort(String[] list2)
     {
-        int swaps = 1;
-        int x = 0;
+        int a = 1;
         String y;
-
-        while(swaps != 0){
-            swaps = 0;
-            for(int i = 0; i < list2.length-1; i++){
-                if(list2[i].compareTo(list2[i+1]) > 0){
+        while(a != 0)
+        {
+            a = 0;
+            for(int i = 0; i < list2.length-1; i++)
+            {
+                if(list2[i].compareTo(list2[i+1]) > 0)
+                {
                     y = list2[i];
                     list2[i] = list2[i+1];
                     list2[i+1] = y;
-                    swaps++;
+                    a++;
                 }
             }
         }
