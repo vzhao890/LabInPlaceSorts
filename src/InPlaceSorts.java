@@ -3,28 +3,19 @@ public class InPlaceSorts
 
     public static void insertionSort(int[] list1)
     {
-        int[] sorted= new int[list1.length];
-        int a= list1.length-1;
-        int b=1;
-        int hold;
-        list1[a]=list1[0];
-
-        while(a>0)
+        int N = list1.length;
+        int i;
+        int j;
+        int temp; 
+        for (i = 1; i< N; i++)
         {
-            if(list1[b]>=sorted[a])
+            j = i; temp = list1[i];
+            while (j > 0 && temp < list1[j-1])
             {
-                hold=sorted[a];
-                sorted[a]=list1[b];
-                a=a-1;
-                b += 1;
-                sorted[a]=hold;
-
+                list1[j] = list1[j-1];
+                j = j-1;
             }
-
-        }
-        for(int i=0;i<list1.length-1;i++)
-        {
-            list1[i]=sorted[i];
+            list1[j] = temp;
         }
 
     }
