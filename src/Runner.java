@@ -7,6 +7,7 @@ public class Runner
         double[] list3 = {0.3,0.1,0.0,0.2,0.4,0.1};
         InPlaceSorts.selectionSort(list3);
         InPlaceSorts.insertionSort(list1);
+        InPlaceSorts.bubbleSort(list2);
         for(int i=0;i<list3.length;i++)
         {
             System.out.print(" "+list3[i]);
